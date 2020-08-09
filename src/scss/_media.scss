@@ -1,34 +1,48 @@
 @media (max-width: 1100px) {
-  .about{
+  .about {
     margin-left: 10px;
   }
 }
 
 @media (max-width: 1100px) {
-  .about{
+  .about {
     margin-left: 30px;
   }
 }
 
 @media (max-width: 700px) {
-  .photo{
+  .photo {
     background-size: cover;
+  }
+  #fs-frm{
+    margin-top: 0;
   }
 }
 
 @media (max-height: 700px) {
-  .header{
+  .header {
     margin-bottom: 50px;
   }
 }
 
 @media (max-width: 678px) {
-  .container{
+  .main {
     flex-direction: column;
   }
-  .photo{
+  .photo {
     margin: 0 auto;
     min-height: 350px;
+  }
+  #fs-frm-inputs {
+    justify-content: center;
+    align-items: center;
+
+    input, textarea {
+      margin: 20px auto;
+    }
+  }
+  #fs-frm-inputs, .submit-btn {
+    font-size: 16px;
   }
 }
 

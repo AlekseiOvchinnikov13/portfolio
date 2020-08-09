@@ -5,7 +5,7 @@ body {
   height: 100vh;
 }
 
-.header{
+.header {
   padding-top: 50px;
   margin-bottom: 150px;
 }
@@ -14,6 +14,7 @@ body {
   ul {
     display: flex;
     justify-content: space-evenly;
+
     li {
       a {
         padding: 20px 15px;
@@ -40,24 +41,30 @@ body {
   h1 {
     text-align: center;
   }
-  ul{
+
+  ul {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .social-img{
+
+  .social-img {
     max-width: 64px;
   }
+
   max-width: 650px;
   margin-left: -50px;
   padding: 0 30px;
 }
 
-#fs-frm{
+#fs-frm {
   margin-top: 50px;
   text-align: center;
+  max-width: 330px;
+  width: 100%;
 }
-#fs-frm-inputs{
+
+#fs-frm-inputs {
   display: flex;
   border: none;
   background-color: rgba(lightgrey, .5);
@@ -65,14 +72,15 @@ body {
   margin: 0 auto;
   font-size: 20px;
   border-radius: 18px;
-  input, textarea{
+
+  input, textarea {
     margin: 30px;
     max-width: 267px;
     width: 267px;
   }
 }
 
-.submit-btn{
+.submit-btn {
   margin-top: 15px;
   padding: 10px 15px;
   background-color: rgba(lightgrey, .5);
