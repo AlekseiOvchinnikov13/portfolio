@@ -57,7 +57,7 @@ body {
   padding: 0 30px; }
   .about h1 {
     text-align: center; }
-  .about ul {
+  .about .social-list {
     display: flex;
     justify-content: center;
     align-items: center; }
