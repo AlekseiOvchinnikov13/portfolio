@@ -77,14 +77,15 @@ body {
 
 
 #fs-frm {
-  margin-top: 50px;
-  text-align: center;
-  max-width: 330px;
-  width: 100%;
+    text-align: center;
+    max-width: 310px;
+    width: 100%;
+    margin: 50px 5px 0 5px;
 }
 
 #fs-frm-inputs {
   display: flex;
+  flex-direction: column;
   border: none;
   background-color: rgba(lightgrey, .5);
   padding: 0;
@@ -94,8 +95,8 @@ body {
 
   input, textarea {
     margin: 20px 30px;
-    max-width: 267px;
-    width: 267px;
+    max-width: 250px;
+    width: 100%;
   }
 }
 
@@ -128,6 +129,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 250px;
     margin: 35px;
     transition: all .5s;
