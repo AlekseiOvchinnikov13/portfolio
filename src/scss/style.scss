@@ -7,7 +7,7 @@ body {
 
 .header {
   padding-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .header-menu {
@@ -49,10 +49,12 @@ body {
   h1 {
     text-align: center;
   }
+
   .social-list {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .social-img {
@@ -70,60 +72,81 @@ body {
     transform: scale(1);
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 }
 
 
 #fs-frm {
-    text-align: center;
-    max-width: 280px;
-    width: 100%;
-    margin: 20px 5px 20px 5px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #fs-frm-inputs {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: none;
-  background-color: rgba(lightgrey, .5);
-  padding: 0;
-  margin: 0 auto;
+  padding: 20px 35px;
   font-size: 20px;
-  border-radius: 5px;
+  margin: 0;
+  border-radius: 20px;
+  background: #D7E3FC;
+
+  input {
+    line-height: 2;
+  }
 
   input, textarea {
-    margin: 15px;
-    max-width: 250px;
     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     resize: none;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    color: #000022;
+    background: #D7E3FC;
+    box-shadow: inset 5px 5px 7px #b7c1d6,
+    inset -5px -5px 7px #E2EAFC;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #000022;
   }
 }
 
 .submit-btn {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background-color: rgba(lightgrey, .5);
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #9ab0e6, #b7d2ff);
+  color: #000022;
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
   transition: all .5s;
   transform: scale(1);
-  &:hover{
-    transform: scale(1.1);
+
+  &:hover {
+    background: transparent;
+    border: 2px solid #9ab0e6;
+    transform: scale(1.05);
   }
 }
 
-.job-inner{
+.job-inner {
   max-width: 1440px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  a{
+
+  a {
     display: inline-block;
     outline: 1px solid slategrey;
     max-width: 400px;
@@ -131,11 +154,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 200px;
     margin: 35px;
     transition: all .5s;
     transform: scale(1);
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
       outline: 2px solid slategrey;
     }
